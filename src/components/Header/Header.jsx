@@ -8,7 +8,7 @@ const Header = () => {
             <header className="top-0 sticky z-50 backdrop-blur-lg">
                 <nav className="max-w-[90%] xl:max-w-6xl mx-auto flex justify-between items-center py-4">
                     <div>
-                        <h1 className="lg:text-3xl text-xl font-extrabold">Recipe Calories</h1>
+                        <a href="#home"><h1 className="lg:text-3xl text-xl font-extrabold">Recipe Calories</h1></a>
                     </div>
 
                     <div className="hidden lg:block">
