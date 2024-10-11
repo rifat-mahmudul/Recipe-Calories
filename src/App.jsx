@@ -1,10 +1,16 @@
+import Header from "./components/Header/Header"
 
 
 function App() {
 
   return (
     <>
-      <h1>Mahmudul Hasan Rifat</h1>
+      
+      <header>
+        <Header></Header>
+      </header>
+
+
     </>
   )
 }
