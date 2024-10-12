@@ -4,12 +4,12 @@ import Cards from "./components/Cards/Cards"
 import Cooks from "./components/Cooks/Cooks"
 import Header from "./components/Header/Header"
 import Title from "./components/Title/Title"
-import { ToastContainer, toast } from 'react-toastify';
 
 
 function App() {
 
   const [cooks, setCooks] = useState([]);
+  const [cooking, setCooking] = useState([]);
 
   const handleCook = (card) =>{
     
@@ -20,8 +20,17 @@ function App() {
     }else{
       alert('Already Exist')
     }
-  
 
+  }
+
+  const handleCooking = (cook) => {
+    const isExist = cooking.find(item => item.cook.card.recipe_id == cook.cook.card.recipe_id);
+
+    if(!isExist){
+      setCooking([...cooking, cook]);
+    }else{
+      alert('Already Exist')
+    }
   }
 
   return (
@@ -37,7 +46,7 @@ function App() {
         <Title></Title>
         <div className="max-w-[90%] xl:max-w-6xl mx-auto md:flex justify-between items-start gap-10 pb-16">
           <Cards handleCook={handleCook}></Cards>
-          <Cooks cooks={cooks}></Cooks>
+          <Cooks cooks={cooks} handleCooking={handleCooking} cooking={cooking}></Cooks>
         </div>
       </main>
 

@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 
-const Cook = ({cook, handleCooking}) => {
-    const {recipe_id, recipe_name, preparing_time, calories} = cook.card;
-    
+const Cooking = ({cooking}) => {
+
+    const {recipe_id, recipe_name, preparing_time, calories} = cooking.cook.card;
     return (
         <div>
             
@@ -14,21 +14,17 @@ const Cook = ({cook, handleCooking}) => {
                             <td>{recipe_name}</td>
                             <td>{preparing_time}</td>
                             <td>{calories}</td>
-                            <td><button onClick={()=>handleCooking({cook})} className='bg-[#0be58a] text-black hover:bg-[#17aa6d] transition-[0.5s] py-2 px-2 rounded-3xl font-bold'>Preparing</button></td>
                         </tr>
                     </tbody>
                 
             </table>
 
-            
-
         </div>
     )
 }
 
-Cook.propTypes = {
-    cook : PropTypes.object,
-    handleCooking : PropTypes.func,
+Cooking.propTypes = {
+    cooking : PropTypes.object
 }
 
-export default Cook;
+export default Cooking;
