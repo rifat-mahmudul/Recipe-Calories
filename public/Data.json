@@ -50,7 +50,7 @@
             "recipe_id": 6,
             "recipe_name": "Caesar Salad",
             "short_description": "A refreshing salad with romaine lettuce, croutons, and Caesar dressing.",
-            "ingredients": ["200 g romaine lettuce", "50 g croutons", "100 ml Caesar dressing"],
+            "ingredients": ["200 g romaine lettuce", "50 g croutons", "100 ml Caesar dressing", "150 g sugar"],
             "preparing_time": 15,
             "calories": 150
         }
