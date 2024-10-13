@@ -5,7 +5,7 @@ import Cooking from '../Cooking/Cooking';
 const Cooks = ({cooks, handleCooking, cooking}) => {
 
     return (
-        <div className='sm:w-[50%] border-2 shadow-xl p-4 mt-10 sm:mt-0 rounded-lg'>
+        <div className='sm:w-[50%] border-2 shadow-xl p-4 mt-10 lg:mt-0 rounded-lg'>
 
             <h1 className='text-center font-bold text-2xl border-b pb-3'>Want to Cook {cooks.length}</h1>
 

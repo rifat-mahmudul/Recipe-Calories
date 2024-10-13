@@ -44,7 +44,7 @@ function App() {
       <main>
         <Banner></Banner>
         <Title></Title>
-        <div className="max-w-[90%] xl:max-w-6xl mx-auto md:flex justify-between items-start gap-10 pb-16">
+        <div className="max-w-[90%] xl:max-w-6xl mx-auto lg:flex justify-between items-start gap-10 pb-16">
           <Cards handleCook={handleCook}></Cards>
           <Cooks cooks={cooks} handleCooking={handleCooking} cooking={cooking}></Cooks>
         </div>

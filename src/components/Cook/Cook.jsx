@@ -9,7 +9,7 @@ const Cook = ({cook, handleCooking}) => {
             <table>
                 
                     <tbody>
-                        <tr className='flex gap-7 text-gray-500 mt-4 text-center bg-gray-200 p-2 items-center rounded-md'>
+                        <tr className='flex gap-2 lg:gap-7 text-gray-500 mt-4 text-center bg-gray-200 p-2 items-center rounded-md'>
                             <td className='text-black font-bold'>{recipe_id}</td>
                             <td>{recipe_name}</td>
                             <td>{preparing_time}</td>
