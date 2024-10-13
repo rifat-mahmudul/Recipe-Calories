@@ -12,7 +12,6 @@ function App() {
   const [cooking, setCooking] = useState([]);
 
   const handleCook = (card) =>{
-    
     const isExist = cooks.find(item => item.card.recipe_id == card.card.recipe_id);
     
     if(!isExist){
